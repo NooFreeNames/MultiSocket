@@ -46,7 +46,6 @@ func GetOrDefault(key, dflt string) string {
 // Init loads environment variables from a file located at envPath. Returns an
 // error if there was an issue reading the file.
 func Init(envPath string) error {
-	fmt.Println(config)
 	var err error
 	config, err = godotenv.Read(envPath)
 	if err == nil {
